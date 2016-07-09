@@ -15,7 +15,13 @@ public class HomeWorkStrings {
      * @return количество четных числе в строке
      */
     public static int countEvenInString(String s) {
-        return 1;
+
+        int a = 2_5_6_7_4;
+        if (a % 2 == 0){
+        s = s + 1;
+        }
+        System.out.println(s);
+       return a;
     }
 
     /**
@@ -29,6 +35,9 @@ public class HomeWorkStrings {
      * @return результирующая строка
      */
     public static String removeSymbolFromString(String symbol, String s) {
-        return "";
+
+
+
+            return "";
     }
 }
