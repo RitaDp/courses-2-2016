@@ -17,7 +17,6 @@ public class HomeWorkLoops {
      */
     public static int min(int[] integers) {
 
-        integers = new int [14, 25, 8, 13, 18];
         int min = integers[0];
         for(int i = 0; i < integers.length; i++) {
             if (min > integers[i]) ;
@@ -39,13 +38,11 @@ public class HomeWorkLoops {
      */
     public static double max(double[] doubles) {
 
-        doubles = new double [3.1, 2.5, 8.4, 1.3, 8.1];
         double max = doubles[0];
-        for(double i = 0; i < double.length; i++) {
+        for(int i = 0; i < doubles.length; i++) {
             if (max > doubles[i]) ;
             max = doubles[i];
         }
-        System.out.println(max);
         return max;
     }
 
@@ -60,14 +57,14 @@ public class HomeWorkLoops {
      */
     public static float average(short[] shorts) {
 
-       shorts = new short [4, 8, 10, 12, 16];
-        short a  = shorts [0];
-        for (short i = 0; i < short.length; i++) {
-            a = a + shorts[i];
+
+        short a = shorts [0];
+        for (short i = 0; i < shorts.length; i++) {
+            a += shorts[i];
         }
-        a = a / short.length;
-        System.out.println(a);
-       return a;
+        a += a / shorts.length;
+        return(float)a;
+
      }
 
     /**
@@ -80,12 +77,12 @@ public class HomeWorkLoops {
      */
     public static char[] reverse(char[] chars){
 
-        chars = new char [1, 2, 3, 4, 5, 6];
-        for (char i = 0; i < char.length / 2; i++){
-        int a = chars [i];
-            chars[i] = chars[char.length - 1 - i];
-            chars[char.length - 1 - i] = a;
+        char[] result = new char[0];
+        for (char i = 0; i < chars.length / 2; i++){
+        char a = chars [i];
+            chars[i] = chars[chars.length - 1 - i];
+            chars[chars.length - 1 - i] = a;
         }
-        return new char[chars];
+        return chars;
     }
     }

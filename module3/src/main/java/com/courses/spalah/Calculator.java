@@ -24,13 +24,13 @@ public class Calculator {
                 arg1 = Float.parseFloat(arg[0]);
                 op = (arg[1]);
                 arg2 = Float.parseFloat(arg[2]);
-                res = culc(arg1, arg2, op);
+                res = cul(arg1, arg2, op);
             }
 
             if (arg.length == 2) {
                 op = (arg[0]);
                 arg2 = Float.parseFloat(arg[1]);
-                res = culc(res, arg2, op);
+                res = cul(res, arg2, op);
 
             }
 
@@ -45,7 +45,7 @@ public class Calculator {
     }
 
 
-    public static float culc(float arg1, float arg2, String op) {
+    public static float cul(float arg1, float arg2, String op) {
         float result = 0;
         switch (op) {
             case "+":
