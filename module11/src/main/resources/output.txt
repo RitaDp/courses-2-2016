@@ -1,0 +1,4 @@
+Total amount of symbol: 10922
+Amount of words: 1899
+Amount of sentence: 232
+Amount of unique words: 0
