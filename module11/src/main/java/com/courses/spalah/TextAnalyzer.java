@@ -89,7 +89,7 @@ public class TextAnalyzer {
         }
         return uniqueWords.size();
 }
-    public static String countCommonlyUsedWords(String str) {
+  /*  public static String countCommonlyUsedWords(String str) {
         String[] words = str.toLowerCase().split(" ");
         HashMap<String, Integer> usedWords = new HashMap();
         String frequentWord = "";
